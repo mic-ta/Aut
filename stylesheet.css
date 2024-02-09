@@ -1,0 +1,513 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+:root{
+    --bg-color: #fffff2;
+    --text-color: #5D5A46;
+    --attr-1: #C8F9CC;
+    --attr-2: #D1EFB5;
+    --attr-3: #EDEBA0;
+}
+
+body{
+    background-color: var(--bg-color);
+}
+
+header {
+    background-color: var(--bg-color); /* Set the background color of the header */
+    z-index: 1000; /* Ensure header is on top of other content */
+    position: sticky;
+    top: 0;
+    width: 100%; /* Ensure header spans the full width of the viewport */
+}
+
+
+.division {
+    margin: 20px auto; /* Adjust margin as needed */
+    border: 0;
+    border-top: 2px solid var(--text-color); /* Adjust border color and style as needed */
+    width: 90%; /* Adjust width as needed */
+}
+
+section{
+    height: 100vh;
+}
+
+.container-home img, .container-aboutus img{
+    position: absolute;
+    
+}
+
+
+.container {
+    display: flex;
+    height: 100vh; /* Adjust as needed */
+}
+
+.left {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+.right {
+    flex: 1;
+    padding: 50px;
+    margin-left: 600px;
+}
+
+.right h1{
+    font-size: 80px;
+    text-align: center;
+    padding-bottom: 25px;
+    margin-top: 80px;
+    color: var(--text-color);
+}
+
+.right h2{
+    font-size: 32px;
+    text-align: left;
+    padding-bottom: 5px;
+    margin-top: 8px;
+    color: var(--text-color);
+} 
+
+.semi-circle {
+    margin-top: 60px;
+    width: 600px; /* Adjust width as needed */
+    height: calc(90vh - 40px); /* Calculate the height to fill the remaining height of the viewport minus the top and bottom padding */
+    background-image: url(img/AU.jpg);
+    border-radius: 0 100% 100% 0;
+    position: absolute;
+    top: 0; /* Align to the top */
+    left: 0; /* Align to the left */
+}
+
+
+.LB-h1{
+    margin-top: 50px;
+    text-align: center;
+    font-size: 80px;
+    color: var(--text-color);
+}
+
+.Learn-Buddy p{
+    margin-top: 20px;
+    text-align: center;
+    padding-bottom: 35px;
+    font-size: 24px;
+}
+
+.cards{
+    display: flex;
+    flex-direction: row;
+}
+
+.product-card1 {
+    width: 200px; /* Adjust width as needed */
+    height: 300px;
+    background-image: url('img/Vector\ 1.png');
+    background-size: cover;
+    background-position: center;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    margin-left: 250px;
+}
+
+
+
+.product-card2 {
+    width: 200px; /* Adjust width as needed */
+    height: 300px;
+    background-image: url('img/Vector\ 2.png');
+    background-size: cover;
+    background-position: center;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    margin-left: 150px;
+}
+
+.product-card3 {
+    width: 200px; /* Adjust width as needed */
+    height: 300px;
+    background-image: url('img/Vector\ 3.png');
+    background-size: cover;
+    background-position: center;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    margin-left: 150px;
+}
+
+.product-details {
+    padding: 20px;
+}
+
+.product-details h2 {
+    margin-top: 0;
+    text-align: center;
+}
+
+.product-details p {
+    margin-top: 20px;
+
+}
+
+.product-details {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 90%;
+}
+
+.LB-Button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    background-color: var(--text-color);
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    align-self: center; /* Align button to the center horizontally */
+    margin-top: auto; /* Push button to the bottom */
+}
+
+
+.LB-Button:hover {
+    background-color: #272516;
+}
+
+
+.Vector3{
+    bottom: 0;
+    left: 0;
+    z-index: 0;
+    height: 550px;
+    width: 1200px;
+}
+
+.Vector2{
+    bottom: 0;
+    left: 0;
+    z-index: 0;
+    height: 400px;
+    width: 1300px;
+}
+
+.Vector1{
+    bottom: 0;
+    left: 0;
+    z-index: 0;
+    height: 550px;
+    width: 900px;
+}
+
+.Aut{
+    position: absolute;
+    right:0;
+    padding-right: 150px;
+    padding-top: 120px;
+    height: 400px;
+    width: 400px;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    position: fixed;
+    top: 0;
+    left: 25%;
+    width: 100%;
+}
+
+li {
+    float: left;
+}
+
+li a{
+    display: block;
+    color: var(--text-color);
+    font-weight: bold;
+    font-style: italic;
+    font-size: larger;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+li a:hover {
+    color: var(--attr-1);
+    text-shadow: 2px 2px var(--text-color);
+}
+
+.hero-text{
+    position: absolute;
+    z-index: 1;
+    padding-top: 125px;
+    padding-left: 100px;
+    text-align: left;
+}
+
+.hero-text h1{
+    font-size: 80px;
+    padding-left: 90px;
+    padding-bottom: 25px;
+    color: var(--text-color);
+}
+
+.hero-text p{
+    font-size: 24px;
+    font-style: italic;
+}
+
+.get-started{
+    margin-top: 25px;
+    margin-left: 145px;
+    padding: 12px;
+    font-size: 24px;
+    border-radius: 30px;
+    background-color: var(--attr-3);
+}
+
+.get-started:hover{
+    background-color: var(--attr-2);
+}
+
+.get-started a{
+    text-decoration: none;
+    color: var(--text-color);
+}
+
+.container-mood {
+    background-image: url(img/Vector\ 2.png);
+    width: 70%;
+    height: 80vh;
+    margin-top: 70px;
+    margin-left: 180px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    overflow: hidden;
+    padding: 20px;
+}
+
+.mood-section {
+    display: flex;
+    height: 100%;
+}
+
+.mood-board {
+    flex: 2;
+    padding: 20px;
+}
+
+.mood-board h2{
+    text-align: center;
+}
+
+.emojis {
+    display: flex;
+    justify-content: center;
+    gap: 80px;
+    margin-top: 50px;
+    margin-bottom: 20px;
+}
+
+.emoji {
+    font-size: 80px;
+    cursor: pointer;
+    transition: transform 0.2s;
+}
+
+textarea {
+    margin-top: 100px;
+    width: 95%;
+    height: 100px;
+    resize: none;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid var(--text-color);
+    margin-bottom: 20px;
+}
+
+.emoji:hover {
+    transform: scale(1.2);
+}
+
+
+.share{
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    background-color: var(--text-color);
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-left: 45%;
+    align-self: center; /* Align button to the center horizontally */
+    margin-top: auto; /* Push button to the bottom */
+}
+
+.share:hover{
+    background-color: #272516;
+}
+
+.comm-text{
+    position: absolute;
+    z-index: 1;
+    padding-top: 125px;
+    padding-left: 70px;
+    text-align: left;
+}
+
+.comm-text h1{
+    font-size: 80px;
+    padding-bottom: 25px;
+    color: var(--text-color);
+}
+
+.comm-text p{
+    font-size: 24px;
+    font-style: italic;
+}
+
+.buttn{
+    display: flex;
+    flex-direction: row;
+    margin-left: 100px;
+}
+
+.exp, .shr{
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    background-color: var(--text-color);
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-left: 30px;
+    align-self: center; /* Align button to the center horizontally */
+    margin-top: 50px; /* Push button to the bottom */
+}
+
+.exp:hover{
+    background-color: var(--attr-1);
+    color: var(--text-color);
+}
+
+.shr:hover{
+    background-color: var(--attr-2);
+    color: var(--text-color);
+}
+
+
+.row {
+    margin-top: 80px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-end; /* Align columns to the right */
+}
+
+/* Create two equal columns that sit next to each other */
+.column1,
+.column2 {
+    flex-basis: 40px; /* Adjust for padding */
+    padding: 0 4px;
+    text-align: right; /* Align images to the right within columns */
+}
+
+.column1 img,
+.column2 img {
+    margin-top: 8px;
+    vertical-align: middle;
+    max-width: 100%; /* Ensure images don't overflow column width */
+}
+
+
+.shift{
+    padding-left: 160px;
+    
+}
+
+
+.cont-text{
+    position: absolute;
+    z-index: 1;
+    padding-top: 25px;
+    padding-left: 20px;
+    text-align: left;
+}
+
+.cont-text h1{
+    font-size: 80px;
+    padding-bottom: 15px;
+    color: var(--text-color);
+    text-align: center;
+}
+
+/* Style inputs with type="text", select elements and textareas */
+input[type=text], input[type=email], select, textarea {
+    width: 100%; /* Full width */
+    padding: 12px; /* Some padding */ 
+    border: 1px solid var(--text-color); /* Gray border */
+    border-radius: 4px; /* Rounded borders */
+    box-sizing: border-box; /* Make sure that padding and width stays in place */
+    margin-top: 6px; /* Add a top margin */
+    margin-bottom: 16px; /* Bottom margin */
+    resize: vertical /* Allow the user to vertically resize the textarea (not horizontally) */
+  }
+  
+  /* Style the submit button with a specific background color etc */
+  input[type=submit] {
+    background-color: var(--text-color);
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  /* When moving the mouse over the submit button, add a darker green color */
+  input[type=submit]:hover {
+    background-color: var(--attr-3);
+    color: var(--text-color);
+  }
+
+  .cont-aut{
+    position: absolute;
+    right:0;
+    padding-right: 50px;
+    padding-top: 120px;
+    height: 400px;
+    width: 400px;
+}
+  
+
+.footer {
+    position: relative; /* Ensure footer stays fixed at the bottom */
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 30px;
+    background-color: var(--text-color);
+    color: white;
+    text-align: center;
+    margin-bottom: 0; /* Remove space below the footer */
+}
+
+.footer p{
+    padding-top: 5px;
+}
+
+ 
